@@ -1,0 +1,163 @@
+<!-- Portfolio -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Information-->
+	<meta charset="UTF-8">
+	<meta title = "Portfolio">
+	<meta name = "author" content = "Lavanya Ravi">
+	<meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+
+	<!-- Title of the webpage -->
+	<title>Lavanya's Portfolio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Bellefair|Berkshire+Swash|Dancing+Script|Fascinate+Inline|Fredericka+the+Great|Give+You+Glory|Gloria+Hallelujah|Gochi+Hand|Indie+Flower|Josefin+Slab|Lobster|Love+Ya+Like+A+Sister|Modak|Poiret+One|Pompiere|Ribeye+Marrow|Sacramento|Shadows+Into+Light|Sue+Ellen+Francisco|Tangerine" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="reset.css" type="text/css">
+	<link rel="stylesheet" href="portfolioFinal.css" type="text/css">
+	<script src="webPort.js"></script>
+
+</head>
+<body style="overflow-x: hidden;">
+
+	<header id="fixedHeader"> 
+		<!-- <div class="container"> -->
+		<nav class="container">
+			<ul id="head">
+				<li class="navBar menu"> <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776; </a> </li>
+				<div id="contain" class="topnav">
+					<li class="navBar"> <a href="#about" class="list aboutNav">About</a> </li>
+					<li class="navBar"> <a href="#work" class="aboutWork list">Skills &amp; Work </a></li>
+					<li class="navBar"> <a href="#contact" class="aboutContact list">Contact </a></li>
+				</div>
+			</ul>
+		</nav>
+		<!-- </div> -->
+	</header>
+
+	<!-- About -->
+	<section id="about" class="clear">
+		<figure class="profile">
+			 <img src="IMG_20161025_160031.jpg" alt="A profile picture" class="profilePicture"/> 
+		</figure>
+		<section class = "contentIntro">
+			<p> <h2 id="name"> Lavanya Ravi </h2> </p>
+			<p id="subContent"> Oracle Developer. <br>
+			Currently on the road to becoming <br> a Full Stack Developer. </p>
+		</section>
+	</section>
+
+	<!-- Projects -->
+	<section id="work">
+		<section id="mySkills">
+			<h2 class = "secondHead"> My Skills: </h2>
+			<!-- <ol id = "skills"> -->
+				<img src="htmlLogo.png" alt="HTML logo" class="logo" />
+				<img src="css3.png" alt="CSS logo" class="logo" />
+				<img src="js.png" alt="JS logo" class="logo" />
+				<img src="jquery.png" alt="jQuery logo" class="logo" />
+				<img src="node.svg" alt="NodeJS logo" class="logo" />
+				<img src="react.svg" alt="ReactJS logo" class="logo" />
+				<!-- <li> HTML </li>
+				<li> CSS </li>
+				<li> Javascript </li>
+				<li> jQuery </li>
+				<li> NodeJS </li>
+				<li> ReactJS </li> -->
+			<!-- </ol> -->
+		</section>
+
+		<section>
+
+		<h2 class="secondHead"> My works: </h2>
+
+			<section>
+				<!-- Project 1 -->
+
+				<div id = "imageCard" class="centerAlign">
+
+					<img src="black.jpg" alt="project 1" class="project" />
+					<div class="card">
+						<h3> Project 1 </h3>
+					</div>
+				</div>
+
+			</section>
+		
+			<section>
+				<!-- Project 2 -->
+
+				<div id = "imageCard" class="centerAlign">
+
+					<img src="black.jpg" alt="project 2" class="project" />
+					<div class="card">
+						<h3> Project 2 </h3>
+					</div>
+				</div>
+
+
+			</section>
+
+			<section>
+				<!-- Project 2 -->
+
+				<div id = "imageCard" class="centerAlign">
+
+					<img src="black.jpg" alt="project 3" class="project" />
+					<div class="card">
+						<h3> Project 3 </h3>
+					</div>
+				</div>
+
+
+			</section>
+
+			<section>
+				<!-- Project 2 -->
+
+				<div id = "imageCard" class="centerAlign">
+
+					<img src="black.jpg" alt="project 4" class="project" />
+					<div class="card">
+						<h3> Project 4 </h3>
+					</div>
+				</div>
+
+
+			</section>
+			<div class="clear">
+
+			</div>
+		</section>
+	</section>
+
+
+	<!-- Contact -->
+	<section id="contact" class="clear">
+		<address id="address">
+		<p id="caption">Say hello:</p><br>
+		<p id="captionContent">lavanyaravi_1993@yahoo.co.in <br>
+		+919787449941</p>
+		</address>
+
+		<form id="message">
+			<fieldset>
+				<legend> Or just leave a message here: </legend>
+				<!-- Name -->
+				<input type="text" class="textMessage" placeholder="Enter your name" />
+				<!-- Email -->
+				<input type = "email" class="textMessage" placeholder="Enter your E-mail ID" />
+				<!-- Message -->
+				<textarea rows = "7" cols = "5" placeholder = "Your message goes here" class="textMessage textareaMsg"></textarea>
+				<input type = "button" value = "Send" class="btn"/>
+			</fieldset>
+		</form>
+	</section>
+	
+	<footer> 
+		<small> <em>Done by Lavanya Ravi </em></small> 
+	</footer>
+
+</body>
+</html>

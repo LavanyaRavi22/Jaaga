@@ -1,0 +1,58 @@
+html,body {
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#about {
+	height:100%;
+	width:100%;
+}
+
+
+#work {
+	height:100%;
+	width:100%;
+}
+
+
+#contact {
+	height:100%;
+	width:100%;
+}
+
+.container {
+	width:100%;
+	margin:0 auto;
+	height:50px; 
+}
+
+#fixedHeader{
+	list-style: none;
+	width:100%;
+	padding:5px 0;
+	background-color:black;
+}
+
+ul {
+	float:right;
+}
+
+
+.navBar {
+	display:inline-block;
+	text-decoration:none;
+	padding:0px 30px;	
+}
+
+a {
+	text-decoration: none;
+	color:white;
+	margin:0;
+	padding:0;
+}
+
+.clear {
+	clear:both;
+}
