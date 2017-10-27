@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Meta Information -->
+	<meta charset="UTF-8">
+	<meta title = "Quotes Generator">
+	<meta name = "author" content = "Lavanya Ravi">
+	<meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+	<!-- Title for the webpage -->
+	<title>Weather</title>
+	<!-- CSS link -->
+	<link rel="stylesheet" href="weather.css">
+</head>
+<body>
+	<main>
+
+		<!-- Header with the city name -->
+		<header>
+			<h1 id="header"> 
+				Current Weather: 
+				<span id="city"> 
+					City 
+				</span>
+				,
+				<span id="ctry"> 
+					Country 
+				</span>
+			</h1>
+		</header>
+
+		<section id="tempSection">
+
+			<!-- Temperature  -->
+			<div>
+				<p id = "temp" > 0</p>
+				&deg;
+				<a id="tempConvert">C</a>
+			</div>
+
+			<!-- Weather -->
+			<div>
+				<p id="weatherNow">Cold</p>
+			</div>
+			<!-- Icon -->
+			<div>
+				<figure>
+					<img src="#" alt="Weather Icon" id="icon"/>
+				</figure>
+			</div>
+		</section>
+
+
+		<script type="text/javascript" src="js/weather.js">
+
+		</script>
+	</main>
+</body>
+</html>
