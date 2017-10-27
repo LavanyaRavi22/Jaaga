@@ -29,10 +29,12 @@ btn.addEventListener("click",function() {
 
 });
 
+/* Find number of quotes in the file */
 function findLength (data) {
 	return data.length;
 };
 
+/* Produce a random number*/
 function findNumber (len) {
 	var num = (Math.floor(Math.random() * (len)));
 	//console.log(num);
@@ -48,6 +50,8 @@ function findNumber (len) {
 	}
 }
 
+
+/* Render the corresponding HTML */
 function renderHTML(data,number) {
 	//console.log(number);
 	quotes.innerHTML = data[number].quote;

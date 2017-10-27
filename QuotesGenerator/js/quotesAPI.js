@@ -1,8 +1,5 @@
 var btn = document.getElementById('next');
 var twitter = document.getElementById('twitter');
-// var currentQuote = document.getElementById('quote').innerHTML;
-// var currentAuthor = document.getElementById('author').innerHTML;
-// var prevLen = 0;
 var quotes = document.getElementById('quote');
 var authors = document.getElementById('author');
 
@@ -29,25 +26,8 @@ btn.addEventListener("click",function() {
 
 });
 
-// function findLength (data) {
-// 	return data.length;
-// };
 
-// function findNumber (len) {
-// 	var num = (Math.floor(Math.random() * (len)));
-// 	//console.log(num);
-// 	if(num!=prevLen)
-// 	{
-// 		prevLen = num;
-// 		return num;
-// 	}
-// 	else
-// 	{
-// 		var num2 =findNumber(len);
-// 		return num2;
-// 	}
-// }
-
+/* Render the HTML */
 function renderHTML(data) {
 	//console.log(number);
 	quotes.innerHTML = data.quoteText;
@@ -65,6 +45,8 @@ twitter.addEventListener("click",function() {
 	twitter.setAttribute("target","_blank");
 });
 
+
+/* CORS function*/
 // (function() {
 //     var cors_api_host = 'cors-anywhere.herokuapp.com';
 //     var cors_api_url = 'https://' + cors_api_host + '/';

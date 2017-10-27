@@ -1,5 +1,6 @@
 var changeTemp = document.getElementById("tempConvert");
 
+//fetch the location
 (function getLocation() {
 	if (navigator.geolocation) {
 		console.log(navigator.geolocation.getCurrentPosition(showPosition,error));
@@ -25,10 +26,12 @@ function showPosition(position) {
 
 }
 
+//in case of error
 function error(err) {
 	console.warn("Error: "+ err.code + "  Error Message: " + err.message);
 }
 
+//Create,open and send the request
 function showWeather(api) {
 	let ourRequest = new XMLHttpRequest();
 	ourRequest.open("GET",api);
@@ -41,6 +44,7 @@ function showWeather(api) {
 	ourRequest.send();
 }
 
+//Render the corresponding HTML
 function renderHTML(data) {
 	var city=document.getElementById("city");	//data.name
 	var ctry=document.getElementById("ctry");	//data.sys.country;
@@ -60,6 +64,7 @@ function renderHTML(data) {
 	//console.log(data.weather[0].icon);
 }
 
+//Change from Celsius to Fahrenheit and vice versa
 changeTemp.addEventListener("click",function() {
 	let temp = document.getElementById("temp");
 	let cOrF = document.getElementById("tempConvert");
