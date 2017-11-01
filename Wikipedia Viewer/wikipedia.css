@@ -59,21 +59,17 @@ body {
 
 main {
 height:100%;
-/*background-color:yellow;*/
 }
 
 #container {
 	text-align:center;
 	height:auto;
-	/*position:relative;*/
-	/*top:30%;*/
 	margin-top:20%;
 	margin-bottom:22%;
 
 }
 
 header {
-	/*font-family: 'Love Ya Like A Sister', cursive;*/
 	font-family: 'Ribeye Marrow', cursive;
 	font-size:250%;
 }
@@ -85,8 +81,6 @@ input {
 	font-size:150%;
 	text-align:center;
 	font-family: 'Love Ya Like A Sister', cursive;
-	/*border-radius:20%;*/
-	/*border:1px solid black;*/
 }
 
 .random a {
@@ -98,7 +92,6 @@ input {
 
 .random a:hover {
 	text-shadow: 1px 1px #0086FF;
-	/*#0086FF;*/
 }
 
 .content {
@@ -113,13 +106,11 @@ input {
 
 .content h2 {
 	font-size:150%;
-	/*font-family: 'Ribeye Marrow', cursive;*/
 }
 
 .content p{
 	font-size:130%;
 	margin-top:1%;
-	/*font-family: 'Love Ya Like A Sister', cursive;*/
 }
 
 .content:hover {
@@ -127,22 +118,9 @@ input {
 	border-left:5px solid #0086FF;
 	border-right:5px solid #0086FF;
 }
-/*
-footer {
-	color:#FFF0DA;
-	padding:1%;
-	text-align:center;
-	font-size:150%;
-	font-family: 'Sacramento', cursive;  
-	border-top:2px solid #FFF0DA;
-	height:5%;
-}*/
 
 footer {
-  /*position:relative;
-  top:40%;*/
   padding: 1%;
-  /*background-color: #efefef;*/
   color:white;
   text-align: center;
   font-family: 'Sacramento', cursive;

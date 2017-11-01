@@ -18,49 +18,42 @@ function fetchIt(endpoint) {
 }
 
 function getPages(data) {
-	//console.log("I am here!");
-	let section = document.querySelector(".getPages");	
+	
+	let section = document.querySelector(".getPages");				//section to print out the pages
 	while(section.firstChild)
 	{
-		section.removeChild(section.firstChild);
+		section.removeChild(section.firstChild);					// remove previously added pages
 	}
 
-	for(let i = 0;i<data.query.search.length;i++)
+	for(let i = 0;i<data.query.search.length;i++)					// Loop through for 10 pages
 	{
 		// console.log(data);
-		let title = data.query.search[i].title;
-		let snippet = data.query.search[i].snippet;
-		let pageID = data.query.search[i].pageid;
-		// console.log(title);
-		// console.log(snippet);
-		// console.log(data);
-		// let pageURL = `https://en.wikipedia.org/?curid=${pageID}`;
-		// let a = document.createElement("a");
-		// a.setAttribute("href",pageURL);
-		// a.setAttribute("target","_blank");
-		//a.className=pageRedirect;
-		let div = document.createElement("div");
-		let head = document.createElement("h2");  
-		var content = document.createElement("p");                // Create a <li> node
-		var textnode = document.createTextNode(`${title}`);         // Create a text node
-		//var textnode2 = document.createTextNode(snippet);
-		content.innerHTML = snippet;
-		//console.log(content);
+		let title = data.query.search[i].title;						// title of the page
+		let snippet = data.query.search[i].snippet;					// content of the page
+		let pageID = data.query.search[i].pageid;					// pageId - to redirect to the corresponding page
+		let page = `https://en.wikipedia.org/?curid=${pageID}`;		// Redirects to the corresponding page
+		let ref = document.createElement("a");						// Create <a> tag
+		 	ref.setAttribute("href",page);							// Append attributes to the <a> tag
+		 	ref.setAttribute("target","_blank");
+		ref.className="pageRedirect";
+		let div = document.createElement("div");					// Create <div> tag
+		let head = document.createElement("h2");  					// Create <h2> tag
+		var content = document.createElement("p");                  // Create <p> tag
+		var textnode = document.createTextNode(`${title}`);         // Create a text node with title
+		content.innerHTML = snippet;								// Append corresponding tags and text nodes
 		head.appendChild(textnode);
 		div.appendChild(head);
 		div.appendChild(content);
 		div.className = "content";
-		// a.appendChild(div);
-		console.log(div);
-		section.append(div);
+		ref.appendChild(div);
+		console.log(ref);
+		section.append(ref);
 	}
-	//node.appendChild(textnode);                              // Append the text to <li>
-	//document.getElementById("myList").appendChild(node); 
 }
 
 function callForPages(e) 
 {
-	//console.log(e);
+	//Work only if Enter key is pressed
 	if(e.keyCode == 13)
 	{
 		var valueFromInput = document.querySelector("input").value;
@@ -70,8 +63,6 @@ function callForPages(e)
 	}
 }
 
-	let input = document.querySelector("input");
-	input.addEventListener("keyup",callForPages);
-
-
-//console.log("I am here!");
+//Adding Event Listener
+let input = document.querySelector("input");
+input.addEventListener("keyup",callForPages);
