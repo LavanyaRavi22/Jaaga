@@ -52,3 +52,52 @@ nav header{
 	font-size:300%;
 	padding-left:10%;
 }
+
+table,tr {
+	width:80%;
+	font-size:120%;
+}
+
+tr {
+	height:50%;
+}
+
+
+img {
+	height:100px;
+	border-radius:50%;
+	/*width:15%;*/
+}
+
+.image {
+	text-align:center;
+		
+}
+
+
+td {
+	height:50%;
+	width:20%;
+	text-align:left;
+	padding:1%;
+	vertical-align: middle;
+}
+
+table a {
+	text-decoration:none;
+	color:black;
+}
+
+table a:hover {
+	
+}
+
+
+
+
+
+
+
+
+
+
