@@ -2,24 +2,15 @@ var listOfItems =[];
 startIt();
 setTimeout(renderHTML,5000);
 
-
 function startIt(){
 	let users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
-	//let users = ["ESL_SC2","freecodecamp"];
 	for(let i=0;i<users.length;i++)
 	{
-		let obj={ display:"null",
-				  logo:"null",
-				  url:"null",
-				  status:"null"
-				};
+		let obj={ display:"null", logo:"null", url:"null", status:"null" };
 		listOfItems.push(obj);
 		fetchIt(users[i],"channels",i);
-	}
-	
+	}	
 };
-
-
 
 function fetchIt(string,getFrom,i) {
 	
@@ -42,18 +33,15 @@ function getData(data,string,i) {
 }
 
 function getMoreData(data,i) {
-	//console.log(data.stream);
 	let status;
 	(data.stream == null) ? status = "Offline"	: status = data.stream.channel.status;;
 	listOfItems[i].status=status;
 	console.log(listOfItems);
-
 }
 
 function renderHTML() {
 	for(var i=0;i<listOfItems.length;i++)
 	{
-
 		let sectionToAdd= document.querySelector(".displayChannels");
 		let table = document.createElement("table");
 		let tr = document.createElement("tr");
