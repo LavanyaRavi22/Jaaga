@@ -1,0 +1,73 @@
+html,body {
+	background-color:black;
+	color:white;
+}
+
+.setter {
+	width:0 auto;
+}
+
+.breakSetter {
+	display:inline-block;
+	float:left;
+	width:50%;
+	text-align:center;
+}
+
+.label{
+	font-size : 150%;
+}
+
+.labelValue {
+	font-size:250%;
+}
+
+.sessionSetter {
+	display:inline-block;
+	clear:left;
+	width:50%;
+	text-align:center;
+}
+
+.changeBreak {
+	cursor:pointer;
+}
+
+.changeSession {
+	cursor:pointer;
+}
+
+
+.display {
+	width:0 auto;
+}
+
+.sessions {
+	display:inline;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
+	/*height:20%*/
+	/*border:2px solid white;*/
+}
+
+.breaks {
+	display:inline;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
+	/*height:20%*/
+	/*border:2px solid white;*/
+}
+
+.displayLabel {
+	font-size:200%;
+}
+
+.sessionTime, .breakTime{
+	font-size:250%;
+}
+
+.hidden {
+	display:none;
+}
