@@ -11,6 +11,8 @@ var patternGenerate = (function(){
 	}
 
 	async function playPattern() {
+		count=0;
+		console.log(count);
 		var getColor,colorFrom;
 		
 		var opacityChange = (getColor) => new Promise((res,rej)=>setTimeout(() => {
@@ -38,19 +40,18 @@ var patternGenerate = (function(){
 	let count = 0;
 
 	function clickEvent(count) {
-		count=count;
 		var colorDiv = document.querySelectorAll(".colors");
 		colorDiv.forEach(function(div){
-			div.addEventListener("click",function (event){
-				//event.preventDefault();
-				console.log(count);
-				count++;
-				id=div.id.charAt(div.id.length-1);
-				userPress(id,count);
-			});
+			div.addEventListener("click",once);
 		});
 	}
 
+	function once(event){
+				console.log(count);
+				count++;
+				id=event.target.id.charAt(event.target.id.length-1);
+				userPress(id,count);
+			};
 	
 
 	function userPress(id,count) {
@@ -66,7 +67,7 @@ var patternGenerate = (function(){
 				console.log(count);
 				count = 0;
 				console.log(count);
-				 beginGame();
+				beginGame();
 			}
 			else
 			{
@@ -74,18 +75,15 @@ var patternGenerate = (function(){
 				console.log(count);
 			}
 		}
-		// else
-		// {
-		// 	count=0;
-		// 	playPattern();
-		// }
-	}
-
-	function resetIt()
-	{
-		count=0;
-		console.log(count);
-		beginGame();
+		else
+		{
+			console.log("in here");
+			console.log(count);
+			count = 0;
+			console.log(count);
+			playPattern();
+			//beginGame();
+		}
 	}
 
 	function checkIfRight(color,id) {
@@ -97,8 +95,6 @@ var patternGenerate = (function(){
 	function beginGame() {
 		var colorNum = generateRandomNumber();
 		pattern.push(colorNum);
-		count=0;
-		//console.log(count);
 		playPattern();
 	}
 
