@@ -41,7 +41,8 @@ var patternGenerate = (function(){
 		count=count;
 		var colorDiv = document.querySelectorAll(".colors");
 		colorDiv.forEach(function(div){
-			div.addEventListener("click",function(){
+			div.addEventListener("click",function (event){
+				//event.preventDefault();
 				console.log(count);
 				count++;
 				id=div.id.charAt(div.id.length-1);
@@ -49,6 +50,8 @@ var patternGenerate = (function(){
 			});
 		});
 	}
+
+	
 
 	function userPress(id,count) {
 		var result=checkIfRight(id,count);
@@ -63,7 +66,6 @@ var patternGenerate = (function(){
 				console.log(count);
 				count = 0;
 				console.log(count);
-				//return count;
 				 beginGame();
 			}
 			else
@@ -72,11 +74,11 @@ var patternGenerate = (function(){
 				console.log(count);
 			}
 		}
-		else
-		{
-			count=0;
-			playPattern();
-		}
+		// else
+		// {
+		// 	count=0;
+		// 	playPattern();
+		// }
 	}
 
 	function resetIt()
