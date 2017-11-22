@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Meta Information-->
+	<meta charset="UTF-8">
+	<meta title = "Simon Generator">
+	<meta name = "author" content = "Lavanya Ravi">
+	<meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+
 	<title>Simon Generator</title>
 	<!-- Linking stylesheet -->
 	<link rel="stylesheet" href="simon.css">
 </head>
 <body>
-	<div class="playArea">
-		<div id="color0" class="color colors">
+	<div id="mainContent">
+		<div class="playArea">
+			<div id="color0" class="color colors">
 
-		</div>
-		<div id="color1" class="color colors">
+			</div>
+			<div id="color1" class="color colors">
 
-		</div>
-		<div id="color2" class="color colors">
+			</div>
+			<div id="color2" class="color colors">
 
-		</div>
-		<div id="color3" class="color colors">
+			</div>
+			<div id="color3" class="color colors">
 
-		</div>
-		<div id="center" class="color">
-			<p class="simon"> Simon </p>
-			<p class="input"> -- </p>
-			<button type="button" class="start"></button>
-			<button type="button" class="strict"></button>
-			<p class="label count"> COUNT </p>
-			<p class="label starts"> START </p>
-			<p class="label stricts"> STRICT </p>
+			</div>
+			<div id="center" class="color">
+				<p class="simon"> Simon </p>
+				<p class="input"> -- </p>
+				<button type="button" class="start"></button>
+				<button type="button" class="strict"></button>
+				<p class="label count"> COUNT </p>
+				<p class="label starts"> START </p>
+				<p class="label stricts"> STRICT </p>
+			</div>
 		</div>
 	</div>
+
+	<audio data-key="color0" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+	<audio data-key="color1" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+	<audio data-key="color2" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+	<audio data-key="color3" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+
 	<!-- this is the script tag containing the link to the js file -->
 	<script type="text/javascript" src="js/simon.js"></script>
 </body>

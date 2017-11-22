@@ -48,13 +48,14 @@ table {
 html,body{
 	width:100%;
 	height:100%;
+	background-color:#F1E9D4;
 }
 
 .playArea {
 	/*background-color: yellow;*/
 	width:30%;
 	height:50%;
-	border:5px black solid;
+	border:5px white solid;
 	z-index:1;
 	position:absolute;
 	top:25%;
@@ -70,25 +71,25 @@ html,body{
 }
 
 #color0 {
-	background-color:red;
+	background-color:#170053;	
 }
 
 #color1 {
-	background-color:blue;
+	background-color:#3500C5;
 }
 
 #color2 {
 	/*clear:both;*/
-	background-color:green;
+	background-color:#279DD4;
 }
 
 #color3 {
 	/*clear:both;*/
-	background-color:yellow;
+	background-color:#66C2E3;
 }
 
 #center {
-	border:5px black solid;
+	border:5px #415A65 solid;	
 	position:absolute;
 	z-index:2;
 	background-color:white;
@@ -99,6 +100,7 @@ html,body{
 .simon {
 	font-size:300%;
 	text-align:center;
+	margin-top:3%;
 }
 
 .input {
@@ -113,7 +115,7 @@ html,body{
 	padding-left:5%;
 	padding-right:5%;
 	position:absolute;
-	top:30%;
+	top:35%;
 	left:10%;
 }
 
@@ -124,7 +126,7 @@ html,body{
 	height:17%;
 	border-radius:50%;
 	position:absolute;
-	top:35%;
+	top:40%;
 	left:45%;
 }
 
@@ -135,24 +137,30 @@ html,body{
 	height:17%;
 	border-radius:50%;
 	position:absolute;
-	top:35%;
+	top:40%;
 	left:73%;
 }
 
 .label {
 	display:inline;
 	position:absolute;
-	top:60%;
+	top:65%;
+	font-size:80%;
 }
 
 .count {
-	left:10%;
+	left:12%;
 }
 
 .starts {
-	left:42%;
+	left:45%;
 }
 
 .stricts {
-	left:70%;
+	left:73%;
+}
+
+#mainContent {
+	text-align:center;
+	margin: 5%;
 }

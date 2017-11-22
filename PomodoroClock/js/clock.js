@@ -17,7 +17,10 @@ function alter(classChange,operator) {
 		(valChange.innerHTML !== "1") ? valChange.innerHTML = Number(valChange.innerHTML) - 1 : valChange.innerHTML = valChange.innerHTML;
 	else if(operator ==="+")
 		valChange.innerHTML = Number(valChange.innerHTML) + 1;
-	valueChange.innerHTML = `${valChange.innerHTML}:00`;
+	console.log(valueChange);
+	var curSess = document.querySelector(".active");
+	if(!curSess.classList.contains("start"))
+		valueChange.innerHTML = `${valChange.innerHTML}:00`;
 }
 
 // New Code
@@ -85,7 +88,10 @@ function changeTimer(startTime,startTime2,getClass) {
 			hours = minutes/60;
 			minutes = minutes%60;
 		}        //console.log(minutes);       //console.log(seconds);
-		sessionTimer.innerHTML = `${minutes}:${seconds}`;
+		if(seconds>9)
+			sessionTimer.innerHTML = `${minutes}:${seconds}`;
+		else
+			sessionTimer.innerHTML = `${minutes}:0${seconds}`;
 	}
 	else
 	{
